@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Vision Pro</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        // Smooth scroll functionality
+        document.addEventListener("DOMContentLoaded", function() {
+            var links = document.querySelectorAll("a[href^='#']");
+
+            for (var i = 0; i < links.length; i++) {
+                links[i].addEventListener("click", function(event) {
+                    event.preventDefault();
+                    var targetElement = document.querySelector(this.getAttribute("href"));
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: "smooth"
+                    });
+                });
+            }
+        });
+    </script>
+</head>
+<body>
+    <header class="sticky-header">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+		<li><a href="#specifications">Specifications</a></li>
+		<li><a href="#images">Images</a></li>
+		<li><a href="#video">Video</a></li>
+		<li><a href="#reviews">Rate</a></li>
+                <li><a href="#contact">Contact</a></li>
+		
+            </ul>
+        </nav>
+    </header>
+    <section id="home" class="hero">
+    <div class="hero-content">
+        <h1>The Future of Visual Technology</h1>
+        <p>Experience the Power of Apple Vision Pro</p>
+        <a href="#features" class="btn">Learn More</a>
+    </div>
+</section>
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="feature">
+                <img src="product_black_background.jpg" alt="Feature Icon">
+                <h3>Advanced Image Recognition</h3>
+                <p>Our cutting-edge technology allows for precise and accurate image recognition, enabling a wide range of applications.</p>
+            </div>
+            <div class="feature">
+                <img src="feature2.jpg" alt="Feature Icon">
+                <h3>Real-time Object Detection</h3>
+                <p>Experience real-time object detection with high accuracy, making it ideal for applications in security and surveillance.</p>
+            </div>
+            <div class="feature">
+                <img src="feature1.jpg" alt="Feature Icon">
+                <h3>Easy Integration</h3>
+                <p>Seamlessly integrate our Vision Pro solution into your existing systems and platforms with our comprehensive API.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="pricing">
+    <div class="container">
+        <h2>Pricing</h2>
+        <div class="pricing-option">
+            <h3>Apple Vision Pro</h3>
+            <p class="price">$3499</p>
+            <p>Experience the future of visual technology with our advanced image recognition and real-time object detection capabilities.</p>
+            <a href="https://www.apple.com/apple-vision-pro/" class="btn">Buy Now</a>
+        </div>
+    </div>
+</section>
+
+<section id="specifications" class="specifications">
+    <div class="container">
+        <h2>Specifications</h2>
+        <div class="spec-grid">
+            <div class="spec-card">
+                <h3>Mixed Reality Experience</h3>
+                <p>The Apple Vision Pro seamlessly blends digital content with your physical space. Navigate using your eyes, hands, and voice.</p>
+            </div>
+            <div class="spec-card">
+                <h3>Custom 3-Element Lenses</h3>
+                <p>Allow 4K video, HDR, and fine text at any angle.</p>
+            </div>
+            <div class="spec-card">
+                <h3>Personalized Sound</h3>
+                <p>Dual-driver audio pods deliver ambient spatial audio.</p>
+            </div>
+            <div class="spec-card">
+                <h3>Advanced Cameras and Sensors</h3>
+                <p>Let you see the world clearly, understand your environment, and detect hand input.</p>
+            </div>
+            <div class="spec-card">
+                <h3>M2 and R1 Chips</h3>
+                <p>Uses the M2 chip alongside the new R1 chip for real-time sensor interaction.</p>
+            </div>
+            <div class="spec-card">
+                <h3>Long Battery Life</h3>
+                <p>External battery supports up to 2 hours of use, and all-day use when plugged in.</p>
+            </div>
+            <div class="spec-card">
+                <h3>Premium Design</h3>
+                <p>Made from aerospace-grade aluminum materials with a three-dimensionally formed laminated glass and aluminum alloy frame.</p>
+            </div>
+            <div class="spec-card">
+                <h3>Comfortable Fit</h3>
+                <p>Head Band provides cushioning, breathability, and stretch. Fit Dial lets you adjust Vision Pro precisely to your head.</p>
+            </div>
+            <div class="spec-card">
+                <h3>High-Resolution Displays</h3>
+                <p>Custom micro-OLED displays deliver more pixels than a 4K TV to each eye for stunning clarity.</p>
+            </div>
+            <div class="spec-card">
+                <h3>Light Seal</h3>
+                <p>Gently conforms to your face, delivering a precise fit while blocking out stray light.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="images" class="images">
+    <div class="container">
+        <h2>Gallery</h2>
+        <div class="image-grid">
+            <div class="image-card">
+                <img src="feature1.jpg" alt="Image 1">
+            </div>
+            <div class="image-card">
+                <img src="face.jpg" alt="Image 2">
+            </div>
+            <div class="image-card">
+                <img src="feature2.jpg" alt="Image 3">
+            </div>
+            <!-- Add more image cards as needed -->
+        </div>
+    </div>
+</section>
+
+<section id="video" class="video-section">
+  <h2>Watch</h2>
+  <div class="video-container">
+    <iframe width="840" height="472.5" src="https://www.youtube.com/embed/TX9qSaGXFyg" title="YouTube video player" frameborder="0" 	allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>		</iframe>
+  </div>
+</section>
+
+<section id="reviews" class="reviews">
+    <div class="container">
+        <h2>Customer Reviews</h2>
+        <form id="review-form">
+            <div class="rating">
+                <label for="stars">Rate it:</label>
+                <div class="stars" id="star-rating">
+                    <span class="star" data-rating="1">&#9733;</span>
+                    <span class="star" data-rating="2">&#9733;</span>
+                    <span class="star" data-rating="3">&#9733;</span>
+                    <span class="star" data-rating="4">&#9733;</span>
+                    <span class="star" data-rating="5">&#9733;</span>
+                </div>
+                <input type="hidden" name="rating" id="rating-value">
+            </div>
+            <div class="review">
+                <label for="review-text">Write a review (200 words max):</label>
+                <textarea id="review-text" name="review-text" rows="4" maxlength="200" required></textarea>
+            </div>
+            <button type="submit" class="btn">Submit Review</button>
+        </form>
+    </div>
+</section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit" class="btn">Submit</button>
+            </form>
+        </div>
+    </section>	
+	
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Apple Vision Pro. All rights reserved.</p>
+        </div>
+    </footer>
+<script src="gallery.js"></script>
+</body>
+</html>
